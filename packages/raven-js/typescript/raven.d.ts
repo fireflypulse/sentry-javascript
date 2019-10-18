@@ -202,7 +202,7 @@ declare namespace Raven {
      * @return {Raven}
      */
     captureException(
-      ex: unknown,
+      ex: Error | ErrorEvent | string,
       options?: RavenOptions
     ): RavenStatic;
 
